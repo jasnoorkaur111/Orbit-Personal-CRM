@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# env files — NEVER commit secrets
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# service-account keys — never commit
+*.gcp.json
+gcp-key*.json
+.gcp-key.json
+
+# os
+.DS_Store
