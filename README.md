@@ -1,19 +1,21 @@
-# Orbit — Personal CRM
+# Orbit: Personal Network Mapper/CRM
 
-Orbit is an open-source, voice-first **personal CRM** built around an interactive
+Welcome to Orbit! 
+
+Orbit is an open-source, voice-first personal crm built around an interactive
 relationship graph. Instead of forms and spreadsheets, you talk (or type) about
-the people you meet, and Orbit turns that into a living map of your network —
-syncing your calendar and email, surfacing who you're drifting from, and using
+the people you meet, and Orbit turns that into a living map of your network, syncing your calendar and email, surfacing who you're drifting from, and using
 AI to research contacts, suggest connections, and brief you before meetings.
 
 > This is the open-source release of Orbit. It's fully self-hostable: bring your
-> own Supabase project and AI keys and run the whole thing yourself.
+> own Supabase project and AI keys and run the whole thing yourself!
+> [still fixing bugs fyi]
 
 ## Features
 
-- **Voice-first capture** — describe an interaction out loud; Orbit parses it into
+- **Voice-first capture** - describe an interaction out loud; Orbit parses it into
   contacts, notes, tasks, and events.
-- **Interactive network graph** — a 2D/3D force-directed map of your relationships.
+- **Interactive network graph** - a 2D/3D force-directed map of your relationships.
 - **Calendar + email sync** — Google and Microsoft (OAuth or public iCal), plus
   IMAP email-stats for engagement signals.
 - **AI relationship intelligence** — contact research, behavioral synthesis,
@@ -51,9 +53,7 @@ npm install
 ### 2. Set up the database
 
 Create a Supabase project, then open the **SQL Editor** and run the contents of
-[`migrations/000_init_schema.sql`](migrations/000_init_schema.sql). This creates
-every table and enables row-level security so each user only ever sees their own
-data.
+[`migrations/000_init_schema.sql`](migrations/000_init_schema.sql). 
 
 ### 3. Configure environment variables
 
@@ -76,20 +76,19 @@ comments in [`.env.example`](.env.example) for where to find each value.
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000), create an account, and walk
-through onboarding.
+Open, create an account, and walk through onboarding.
 
 ## Deployment
 
-Orbit deploys cleanly to [Vercel](https://vercel.com):
+Best deployment via Vercel (vercel.com)
 
-1. Push this repo to GitHub and import it in Vercel.
-2. Add the same environment variables from `.env.local` to your Vercel project.
-3. Set `NEXT_PUBLIC_APP_URL` to your production URL and update your OAuth redirect
+1. push to git & set up to deploy on vercel (connect)
+2. Add the same environment variables from `.env.local` 
+3. Set `NEXT_PUBLIC_APP_URL` to your production URL & update your OAuth redirect
    URIs to match.
-4. Deploy.
+4. deploy!
 
-Any platform that runs Next.js will work as well.
+note: any platform that runs Next.js will work as well.
 
 ## Project structure
 
@@ -109,6 +108,8 @@ public/           icons, manifest, service worker
 Issues and pull requests are welcome. For larger changes, open an issue first to
 discuss the direction.
 
+you can also email me jasnoor@soinsai.com :)
+
 ## License
 
-[MIT](LICENSE) © 2026 Jasnoor Kaur
+[MIT](LICENSE) © 2026 J.K.
