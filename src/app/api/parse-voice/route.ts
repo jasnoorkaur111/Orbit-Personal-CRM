@@ -69,9 +69,8 @@ Rules:
 Return ONLY valid JSON, no markdown or explanation.`;
 
   try {
-    // Vertex Gemini Flash (covered by GCP $300 credit). Cheaper + faster than
-    // gpt-4o-mini for this kind of structured extraction. Schema-locked JSON so
-    // we never get malformed output. Migrated from OpenAI after quota exhaustion.
+    // Vertex Gemini Flash — cheaper + faster than gpt-4o-mini for this kind of
+    // structured extraction. Schema-locked JSON so we never get malformed output.
     const raw = await geminiAsk(prompt, {
       model: 'flash',
       temperature: 0.3,

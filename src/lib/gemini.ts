@@ -5,8 +5,8 @@ import { VertexAI } from '@google-cloud/vertexai';
  * Gemini client with two backends:
  *   - Vertex AI (preferred): bills against your GCP project — used when
  *     GCP_PROJECT_ID is set. Picks up auth from Application Default Credentials
- *     (run `gcloud auth application-default login` once). Lets the $300 trial
- *     credit (or pay-as-you-go) cover everything cleanly.
+ *     (run `gcloud auth application-default login` once). Billed pay-as-you-go
+ *     against your GCP project.
  *   - AI Studio (fallback): legacy `GEMINI_API_KEY` path. Same Gemini models
  *     but billed through AI Studio's separate prepay/postpay system.
  *

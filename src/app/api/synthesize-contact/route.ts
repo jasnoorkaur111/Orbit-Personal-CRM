@@ -108,9 +108,7 @@ Synthesize the relationship. Return ONLY a JSON object wrapped in a single \`\`\
 Be SPECIFIC, not generic. Skip platitudes. If evidence is thin, return short answers (e.g. 1 bullet) rather than padding.`;
 
   try {
-    // Vertex Gemini Flash — covered by GCP $300 credit. Migrated from
-    // OpenAI gpt-4o-mini after quota exhaustion silently broke the
-    // synthesis flow (pre-meeting briefs were returning 500).
+    // Vertex Gemini Flash for the behavioral synthesis pass.
     const text = await geminiAsk(prompt, {
       model: 'flash',
       temperature: 0.3,
